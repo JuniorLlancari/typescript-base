@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const product_service_1 = require("./services/product.service");
+const product_service_1 = require("../Fundamentos/services/product.service");
 (() => {
     let myProductPrice;
     let isEnable = true;

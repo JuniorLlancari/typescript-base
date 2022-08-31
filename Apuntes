@@ -22,3 +22,6 @@ El @ts-ckech es de Visual studio (ver bug de un archivo js)
   }
 * > tsc -w
 
+
+* > npm install -D ts-node
+* > Libreria => npx ts-node ./src/Avanzado/main.ts

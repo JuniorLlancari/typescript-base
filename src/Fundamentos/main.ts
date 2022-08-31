@@ -1,5 +1,5 @@
-import { Product, Size, UserID } from "./Model/product.model"
-import { calcTotalPrecio, products } from "./services/product.service"
+import { Product, Size, UserID } from "../Fundamentos/Model/product.model"
+import { calcTotalPrecio, products } from "../Fundamentos/services/product.service"
 
 (() => {
   let myProductPrice: number;
