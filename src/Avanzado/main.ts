@@ -1,7 +1,7 @@
 import { ROLES, User } from "./app/users/user.model"
-import { addProduct, findProducts, products, updateProduct } from './app/products/product.service';
+// import { addProduct, findProducts, products, updateProduct } from './app/products/product.service';
 import { Product } from './app/products/product.model';
-import {faker} from '@faker-js/faker';
+// import {faker} from '@faker-js/faker';
 // ================== ENUMERABLES ==================//
 const demoUser: User = {
   id:1,
@@ -59,29 +59,29 @@ console.log(parseStr("Junior"))
 // TYPE yo puedo definir(=) tipos primitivos o directos mientras que una interface necesita todo un cuerpo ({}).
 // INTERFACES se puede extender, mientras que los type no
 
-for (let index = 0; index <5; index++) {
-    addProduct({
-      title: faker.commerce.productName(),
-      stock: faker.datatype.number(3),
-      price: parseInt(faker.commerce.price(),10) ,
-      color:faker.commerce.color(),
-      image:faker.image.imageUrl(),
-      isNew:faker.datatype.boolean(),
-      tags:["rando01","rando02"],
-      categoryId:faker.datatype.uuid()
-    })
-}
+// for (let index = 0; index <5; index++) {
+//     addProduct({
+//       title: faker.commerce.productName(),
+//       stock: faker.datatype.number(3),
+//       price: parseInt(faker.commerce.price(),10) ,
+//       color:faker.commerce.color(),
+//       image:faker.image.imageUrl(),
+//       isNew:faker.datatype.boolean(),
+//       tags:["rando01","rando02"],
+//       categoryId:faker.datatype.uuid()
+//     })
+// }
 
 
 
-updateProduct(products[0].id ,{
-  title:"Nuevo title"
-})
+// updateProduct(products[0].id ,{
+//   title:"Nuevo title"
+// })
 
 
-findProducts({
-  stock:10,color:'red',createdAt :new Date(),tags:[]
-})
+// findProducts({
+//   stock:10,color:'red',createdAt :new Date(),tags:[]
+// })
 
 
 // Omit<Product,'id'> | Pick<Product,'id'> Realiza un copia en la cual omite o agregamos DTOS

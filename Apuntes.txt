@@ -1,0 +1,19 @@
+## Primero pasos 
+  > npm i typescript --save-dev         # Instalar typescript para dev
+      
+  @ts-ckech                            # Muestra errores en un archivo js 
+  > npx tsc src/main.ts     # Compila de Ts a Js
+  > npx tsc src/main.ts -- target es6 # Compilarlo a ES6
+  > npx tsc src/main.ts -- target es6  --outDir dist # Todas las compi a una carpeta.
+
+
+## Crea un archivo para la configuracion al compilar Ts
+  > npx tsc --init  
+  > npx tsc         # Aqui lee la configuracion y genera el compilado
+  > npx tsc --watch # Tiene un escucha constante
+
+-----
+
+* > npm install -D ts-node
+* > Libreria => npx ts-node ./src/Avanzado/main.ts
+npm i typescript --save-dev
